@@ -141,3 +141,124 @@ else Console.WriteLine("Not old enough to vote.");
 
 x = 20; y = 18;
 if (x > y) Console.WriteLine("x is greater than y");
+
+int day = 4;
+switch (day)
+{
+    case 1:
+        Console.WriteLine("Monday");
+        break;
+    case 2:
+        Console.WriteLine("Tuesday");
+        break;
+    case 3:
+        Console.WriteLine("Wednesday");
+        break;
+    case 4:
+        Console.WriteLine("Thursday");
+        break;
+    case 5:
+        Console.WriteLine("Friday");
+        break;
+    case 6:
+        Console.WriteLine("Saturday");
+        break;
+    case 7:
+        Console.WriteLine("Sunday");
+        break;
+}
+
+// while loop
+int i = 0;
+while (i < 5)
+{
+    Console.WriteLine(i);
+    i++;
+}
+
+// do while loop
+i = 0;
+do
+{
+    Console.WriteLine(i);
+    i++;
+}
+while (i < 5);
+
+// For loop
+for (i = 0; i < 5; i++)
+{
+    Console.WriteLine(i);
+}
+
+// nested loop is also same as C++
+
+// Outer loop
+for (i = 1; i <= 2; ++i)
+{
+    Console.WriteLine("Outer: " + i);  // Executes 2 times
+
+    // Inner loop
+    for (int j = 1; j <= 3; j++)
+    {
+        Console.WriteLine(" Inner: " + j); // Executes 6 times (2 * 3)
+    }
+}
+
+// foreach loop
+string[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
+foreach (string s in cars)
+{
+    Console.WriteLine(s);
+}
+
+// one example for impl the break
+for (i = 0; i < 10; i++)
+{
+    if (i == 4)
+    {
+        break;
+    }
+    Console.WriteLine(i);
+}
+
+// one ex for c# continue
+for (i = 0; i < 10; i++)
+{
+    if (i == 4)
+    {
+        continue;
+    }
+    Console.WriteLine(i);
+}
+
+// ex of Break and Continue in While Loop
+i = 0;
+while (i < 10)
+{
+    Console.WriteLine(i);
+    i++;
+    if (i == 4)
+    {
+        break;
+    }
+}
+
+i = 0;
+while (i < 10)
+{
+    if (i == 4)
+    {
+        i++;
+        continue;
+    }
+    Console.WriteLine(i);
+    i++;
+}
+
+
+
+
+
+
+
