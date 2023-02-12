@@ -256,7 +256,64 @@ while (i < 10)
     i++;
 }
 
+string []cararray = { "Volvo", "BMW", "Ford", "Mazda" };
+cararray[0] = "Opel";
+Console.WriteLine(cararray[0]);
+// Now outputs Opel instead of Volvo
 
+Console.WriteLine(cararray.Length); // 4
+
+for (i = 0; i < cararray.Length; i++)
+{
+    Console.WriteLine(cararray[i]);
+}
+
+// ---------------
+
+foreach (string s in cararray)
+{
+    Console.WriteLine(s);
+}
+
+Array.Sort(cararray);
+foreach (string s in cararray)
+{
+    Console.WriteLine(s);
+}
+
+int[] myNumbers = { 5, 1, 8, 9 };
+Console.WriteLine(myNumbers.Max());  // 9 here, returns the largest value
+Console.WriteLine(myNumbers.Min());  // 1 here, returns the smallest value
+Console.WriteLine(myNumbers.Sum());  // 23 here, returns the sum of elements
+
+// Multi Dimensional Array
+/*
+    Good to know: The single comma [,] 
+    specifies that the array is two-dimensional. 
+    A three-dimensional array would have two commas: int[,,]. 
+*/
+int[,] numbers = { { 1, 4, 2 }, { 3, 6, 8 } };
+Console.WriteLine(numbers[0, 2]);  // Outputs 2
+
+numbers[0, 0] = 5;  // Change value to 5
+Console.WriteLine(numbers[0, 0]); // Outputs 5 instead of 1
+
+// it is working for two dimensional
+foreach (var nums in numbers)
+{
+    Console.WriteLine(nums);
+}
+
+Console.WriteLine();
+
+for (i = 0; i < numbers.GetLength(0); i++)
+{
+    for (int j = 0; j < numbers.GetLength(1); j++)
+    {
+        Console.Write(numbers[i, j]);
+    }
+    Console.WriteLine();
+}
 
 
 
