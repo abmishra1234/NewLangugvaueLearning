@@ -49,6 +49,39 @@ Console.WriteLine(Math.Max(5, 5));
 Console.WriteLine(Math.Min(5, 5));
 Console.WriteLine(Math.Sqrt(64));
 
-            // Let's test your code change
-            // Test
+// C# String class , you have tow learn
+
+string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+Console.WriteLine("The length of the txt string is: " + txt.Length);
+
+txt = "Hello World";
+Console.WriteLine(txt.ToUpper());   // Outputs "HELLO WORLD"
+Console.WriteLine(txt.ToLower());   // Outputs "hello world"
+
+// String concatenation
+
+string firstName = "John ";
+string lastName = "Doe";
+//string name = firstName + lastName;
+string name = String.Concat(firstName, lastName);
+
+Console.WriteLine(name);
+
+// Adding Numbers and Strings
+string xstr = "10";
+string ystr = "20";
+string zstr = xstr + ystr;  // z will be 1020 (a string)
+Console.WriteLine(zstr);
+
+/*
+    String Interpolation 
+    Another option of string concatenation, is string interpolation, 
+    which substitutes values of variables into placeholders in a string. 
+    Note that you do not have to worry about spaces, like with concatenation: 
+*/
+
+string fname = "Abiansh";
+string sname = "Mishra";
+string finalname = $"My full name is: {fname} {sname}";
+Console.WriteLine(finalname);
 
