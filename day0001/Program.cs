@@ -85,3 +85,59 @@ string sname = "Mishra";
 string finalname = $"My full name is: {fname} {sname}";
 Console.WriteLine(finalname);
 
+/*
+    Access Strings
+    You can access the characters in a string by referring to its index number inside square brackets [].
+*/
+
+string myString = "Hello";
+Console.WriteLine(myString[3]);  // Outputs "H"
+
+/*
+    You can also find the index position of a specific character in a string, 
+    by using the IndexOf() method: 
+*/
+
+Console.WriteLine(myString.IndexOf("e"));  // Outputs "1"
+
+// Full name
+string myname = "Abinash Mishra";
+
+// Location of the letter D
+int charPos = myname.IndexOf("M");
+
+// Get last name
+string lastname = myname.Substring(charPos);
+
+// Print the result
+Console.WriteLine(lastname); // Mishra
+
+// Learn the bool
+bool isCSharpFun = true;
+bool isFishTasty = false;
+
+int n = 10;
+
+Console.WriteLine(isCSharpFun);   // Outputs True
+Console.WriteLine(isFishTasty);   // Outputs False
+Console.WriteLine(n == 10);   // Outputs True
+
+// An Example of boolean expresiion
+x = 10;
+y = 9;
+
+Console.WriteLine(x > y); // returns True, because 10 is higher than 9
+
+x = 9;
+y = 10;
+
+Console.WriteLine(x > y); // returns True, because 10 is higher than 9
+
+int myAge = 25;
+int votingAge = 18;
+
+if (myAge >= votingAge) Console.WriteLine("Old enough to vote!");
+else Console.WriteLine("Not old enough to vote.");
+
+x = 20; y = 18;
+if (x > y) Console.WriteLine("x is greater than y");
