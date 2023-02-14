@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Diagnostics;
+
 Console.WriteLine("Hello, World!");
 Console.WriteLine("Hello C#");
 
@@ -7,7 +9,6 @@ var num1 = 20;
 
 Console.WriteLine(num);
 Console.WriteLine(num1);
-
 
 const int num2 = 10;
 Console.WriteLine(num2);
@@ -292,6 +293,7 @@ Console.WriteLine(myNumbers.Sum());  // 23 here, returns the sum of elements
     specifies that the array is two-dimensional. 
     A three-dimensional array would have two commas: int[,,]. 
 */
+
 int[,] numbers = { { 1, 4, 2 }, { 3, 6, 8 } };
 Console.WriteLine(numbers[0, 2]);  // Outputs 2
 
@@ -314,8 +316,4 @@ for (i = 0; i < numbers.GetLength(0); i++)
     }
     Console.WriteLine();
 }
-
-
-
-
 
