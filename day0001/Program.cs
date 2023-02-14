@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.ComponentModel;
 using System.Diagnostics;
 
 Console.WriteLine("Hello, World!");
@@ -316,4 +317,43 @@ for (i = 0; i < numbers.GetLength(0); i++)
     }
     Console.WriteLine();
 }
+
+/*
+    better way to check the null 
+ */
+
+string myvar = "abcd";
+if (myvar is null)
+{
+    // Do something if the object is null.
+}
+
+// Let's discuss some of the performance code in C#
+// Tips #1
+List<Int32> li = new List<Int32>();
+Stopwatch sw = Stopwatch.StartNew();
+sw.Start();
+for(i=0; i<10000; i++)
+{
+    li.Add(i);
+}
+sw.Stop();
+Console.Write("The Taick Count here is " + sw.ElapsedTicks + "\n");
+
+Int32[] myarr = new Int32[10000];
+sw.Restart();
+for (i = 0; i < 10000; i++)
+{
+    myarr[i] = i;
+}
+sw.Stop();
+Console.Write("The Taick Count here is " + sw.ElapsedTicks + "\n");
+
+
+
+
+
+
+
+
 
