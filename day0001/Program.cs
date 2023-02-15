@@ -2,6 +2,8 @@
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Numerics;
+using Test;
+
 
 Console.WriteLine("Hello, World!");
 Console.WriteLine("Hello C#");
@@ -354,7 +356,6 @@ Console.Write("The Taick Count here is " + sw.ElapsedTicks + "\n");
 // Tips #2
 // Always use for loop instead of foreach
 
-
 List<int> count  = new List<int>(); 
 for (i = 0; i < 10000; ++i) count.Add(i);
 List<int> l1 = new List<int>();
@@ -373,11 +374,22 @@ sw.Stop();
 
 Console.WriteLine("The Tick Count is : " + sw.ElapsedTicks);
 
-
-
-
-
-
-
 //---------------------------
 
+sw.Restart();
+for (i = 0; i < 100; i++)
+{
+    Test.MyClass.Name = "Value";
+}
+sw.Stop();
+Console.WriteLine("Using Property: " + sw.ElapsedTicks);
+sw.Restart();
+for (i = 0; i < 100; i++)
+{
+    Test.MyClass.surname = "Value";
+}
+sw.Stop();
+Console.WriteLine("Direct Assign: " + sw.ElapsedTicks);
+Console.ReadLine();
+
+//---------------------------
