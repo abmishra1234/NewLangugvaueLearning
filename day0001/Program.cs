@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Numerics;
 
 Console.WriteLine("Hello, World!");
 Console.WriteLine("Hello C#");
@@ -349,6 +350,28 @@ for (i = 0; i < 10000; i++)
 sw.Stop();
 Console.Write("The Taick Count here is " + sw.ElapsedTicks + "\n");
 
+//---------------------------
+// Tips #2
+// Always use for loop instead of foreach
+
+
+List<int> count  = new List<int>(); 
+for (i = 0; i < 10000; ++i) count.Add(i);
+List<int> l1 = new List<int>();
+List<int> l2 = new List<int>();
+
+
+sw.Restart();
+for(i=0; i<count.Count; ++i) l1.Add(count[i]);
+sw.Stop();
+
+Console.WriteLine("The Tick Count is : " + sw.ElapsedTicks);
+
+sw.Restart();
+foreach (int nu in count) l1.Add(nu);
+sw.Stop();
+
+Console.WriteLine("The Tick Count is : " + sw.ElapsedTicks);
 
 
 
@@ -356,4 +379,5 @@ Console.Write("The Taick Count here is " + sw.ElapsedTicks + "\n");
 
 
 
+//---------------------------
 
