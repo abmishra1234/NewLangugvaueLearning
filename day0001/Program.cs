@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Numerics;
 using Test;
+using day0001;
 
 
 Console.WriteLine("Hello, World!");
@@ -409,4 +410,26 @@ Console.WriteLine("222--->The Tick Count is " + sw.ElapsedTicks + "Ticks");
 
 //--------------------------------
 
+sw.Restart();
+for (i = 0; i < 1000; ++i)
+{
+    Experiment.name = "Abinash";
+    Experiment.description = "software engineer";
+}
+sw.Stop();
 
+Console.WriteLine("The Value with class" + sw.ElapsedTicks + "ticks");
+
+sw.Restart();
+for (i = 0; i < 1000; ++i)
+{
+    Test2.name = "Abinash";
+    Test2.description = "software engineer";
+}
+sw.Stop();
+
+Console.WriteLine("The Value with struct" + sw.ElapsedTicks + "ticks");
+
+// So outcome is not very enthuastic
+
+// ----------------------------------
