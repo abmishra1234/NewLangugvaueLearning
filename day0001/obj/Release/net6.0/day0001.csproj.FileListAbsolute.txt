@@ -1,0 +1,15 @@
+C:\Abinash-Work\NewC#LearningSeries\NewLangugvaueLearning\day0001\bin\Release\net6.0\day0001.exe
+C:\Abinash-Work\NewC#LearningSeries\NewLangugvaueLearning\day0001\bin\Release\net6.0\day0001.deps.json
+C:\Abinash-Work\NewC#LearningSeries\NewLangugvaueLearning\day0001\bin\Release\net6.0\day0001.runtimeconfig.json
+C:\Abinash-Work\NewC#LearningSeries\NewLangugvaueLearning\day0001\bin\Release\net6.0\day0001.dll
+C:\Abinash-Work\NewC#LearningSeries\NewLangugvaueLearning\day0001\bin\Release\net6.0\day0001.pdb
+C:\Abinash-Work\NewC#LearningSeries\NewLangugvaueLearning\day0001\obj\Release\net6.0\day0001.csproj.AssemblyReference.cache
+C:\Abinash-Work\NewC#LearningSeries\NewLangugvaueLearning\day0001\obj\Release\net6.0\day0001.GeneratedMSBuildEditorConfig.editorconfig
+C:\Abinash-Work\NewC#LearningSeries\NewLangugvaueLearning\day0001\obj\Release\net6.0\day0001.AssemblyInfoInputs.cache
+C:\Abinash-Work\NewC#LearningSeries\NewLangugvaueLearning\day0001\obj\Release\net6.0\day0001.AssemblyInfo.cs
+C:\Abinash-Work\NewC#LearningSeries\NewLangugvaueLearning\day0001\obj\Release\net6.0\day0001.csproj.CoreCompileInputs.cache
+C:\Abinash-Work\NewC#LearningSeries\NewLangugvaueLearning\day0001\obj\Release\net6.0\day0001.dll
+C:\Abinash-Work\NewC#LearningSeries\NewLangugvaueLearning\day0001\obj\Release\net6.0\refint\day0001.dll
+C:\Abinash-Work\NewC#LearningSeries\NewLangugvaueLearning\day0001\obj\Release\net6.0\day0001.pdb
+C:\Abinash-Work\NewC#LearningSeries\NewLangugvaueLearning\day0001\obj\Release\net6.0\day0001.genruntimeconfig.cache
+C:\Abinash-Work\NewC#LearningSeries\NewLangugvaueLearning\day0001\obj\Release\net6.0\ref\day0001.dll
