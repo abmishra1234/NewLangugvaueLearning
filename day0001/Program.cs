@@ -404,7 +404,7 @@ sw.Stop();
 Console.WriteLine("111--->The Tick Count is " + sw.ElapsedTicks + "Ticks");
 
 sw.Restart();
-for (i = 0; i < 100000; ++i) l1new.Add(i);
+for (i = 0; i < 100000; ++i) l2new.Add(i);
 sw.Stop();
 Console.WriteLine("222--->The Tick Count is " + sw.ElapsedTicks + "Ticks");
 
