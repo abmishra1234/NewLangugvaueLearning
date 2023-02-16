@@ -390,6 +390,23 @@ for (i = 0; i < 100; i++)
 }
 sw.Stop();
 Console.WriteLine("Direct Assign: " + sw.ElapsedTicks);
-Console.ReadLine();
 
 //---------------------------
+
+List<Int32> l1new = new List<Int32>();
+List<Int32> l2new = new List<Int32>(100005);
+
+sw.Restart();
+for(i=0; i<100000; ++i) l1new.Add(i);
+sw.Stop();
+
+Console.WriteLine("111--->The Tick Count is " + sw.ElapsedTicks + "Ticks");
+
+sw.Restart();
+for (i = 0; i < 100000; ++i) l1new.Add(i);
+sw.Stop();
+Console.WriteLine("222--->The Tick Count is " + sw.ElapsedTicks + "Ticks");
+
+//--------------------------------
+
+
